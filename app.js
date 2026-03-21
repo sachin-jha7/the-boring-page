@@ -205,15 +205,13 @@ backBtn.addEventListener("click", () => {
 });
 
 // Random Activity
-const proxyUrl = "https://api.allorigins.win/raw?url=";
+// const proxyUrl = "https://api.allorigins.win/raw?url=";
 let urlForData = "https://bored-api.appbrewery.com/random";
 
-const newApiUrl = `${urlForData}?t=${uniqueTimestamp}`;
-const finalUrl = proxyUrl + encodeURIComponent(newApiUrl);
+// const newApiUrl = `${urlForData}?t=${uniqueTimestamp}`;
+// const finalUrl = proxyUrl + encodeURIComponent(newApiUrl);
 let getActivity = () => {
-    fetch(finalUrl, {
-        cache: 'no-store'
-    })
+    fetch(urlForData)
         .then((res) => {
             return res.json();
         })
