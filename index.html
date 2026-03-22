@@ -5,57 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Boring Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="nav">
-        <p class="header">The <span class="one">B</span><span class="two">o</span><span class="three">r</span><span class="four">i</span><span class="five">n</span><span class="six">g</span> Page</p>        
+        <p class="heading">The Boring Page</p>
     </div>
     <div class="main">
-        <div class="btn-container">
-            <div class="btn0">
-                <img src="activity_img1.jpg" alt="cat-img">
-                <button class="activity-btn btn">When Bored</button>
+        <div class="card-container">
+            <div class="card">
+                <img src="gallery/activity_img1.jpg" alt="activity_img">
+                <button id="activity">Random Activity</button>
             </div>
-            <div class="btn1">
-                <img src="cat_img1.jpeg" alt="cat-img">
-                <button class="fact-btn btn">Random Cat Fact</button>
+            <div class="card">
+                <img src="gallery/cat_img1.jpeg" alt="cat_img">
+                <button id="cat-fact">Random Cat Fact</button>
             </div>
-            <div class="btn2">
-                <img src="earth_img-2.jpg" alt="earth-img">
-                <button class="earth-facts btn">About Earth</button>
+            <div class="card">
+                <img src="gallery/fact_img2.jpg" alt="fact_img">
+                <button id="random-fact">Random Facts</button>
             </div>
-            <div class="btn3">
-                <img src="fact_img2.jpg" alt="fact-img">
-                <button class="useless-facts btn">Random Facts</button>
-            </div>
-            <div class="btn4">
-                <img src="Programming_Jokes-img.jpg" alt="joke-img">
-                <button class="joke-btn btn">Programming Jokes</button>
-            </div>
-            <div class="btn5">
-                <img src="GOT_quote-img.jpg" alt="GOT-img">
-                <button class="quote-btn btn">GOT Quotes</button>
+            <div class="card">
+                <img src="gallery/Programming_Jokes-img.jpg" alt="Pgm_joke_img">
+                <button id="jokes">Random Jokes</button>
             </div>
         </div>
-        <br>
-        <div class="result" >
-            <p class="heading"></p>
-            <p class="first-line"></p>
+
+    </div>
+    <div class="output-container">
+        <div class="card">
+            <p class="heading">heading</p>
+            <p class="first-line mt"></p>
             <p class="second-line"></p>
-            <p class="third-line"></p>
-            <p class="fourth-line"></p>
-            <p class="fifth-line"></p>
-            <p class="sixth-line"></p>
-            <p class="seventh-line"></p>
-            <p class="eigth-line"></p>
-            <button class="moreBtn">More Facts</button>
-            <div class="relative">
-                <img class="backBtn" type="button" src="clipart X black img.png" alt="navigation">
+            <div class="btn-container">
+                <button id="back-btn" class="back-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                <button class="more-btn">Next <i class="fa-solid fa-arrow-right-long"></i></button>
             </div>
+
         </div>
-        
     </div>
     <script src="app.js"></script>
 </body>
